@@ -1,0 +1,38 @@
+﻿@model DemoMVC.Models.Student
+
+@{
+    ViewData["Title"] = "Details";
+
+}
+<h1>Details</h1>
+<html>
+<body>@{
+        //var Stud = ViewData["Student"] as DemoMVC.Models.Student;
+        //var Stud = ViewBag.Student;
+    }
+    <table>
+    <tr><td>StudentId:@Model.StudentId</td></tr>
+    <tr><td>StudentId:@Model.Name</td></tr>
+    <tr><td>StudentId:@Model.Gender</td></tr>
+    <tr><td>StudentId:@Model.Address</td></tr>
+    </table>
+  @* //---idhi manam viewdata ki view bad ki istham------//*@
+   @* <table>
+        <tr><td>StudentId:@Stud.StudentId</td></tr>
+        <tr><td>Name:@Stud.Name</td></tr>
+        <tr><td>Gender:@Stud.Gender</td></tr>
+        <tr><td>Address:@Stud.Address</td></tr>
+    </table>*@
+</body>
+</html>
+
+<div>
+    <h4>Logic</h4>
+    <hr />
+    <dl class="row">
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
+</div>
